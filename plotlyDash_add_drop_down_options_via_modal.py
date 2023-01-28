@@ -68,7 +68,6 @@ app.layout = dbc.Container(
         dbc.Row(
             [
                 modal,
-                html.Div(id={'type': 'dummy', 'index': 0})
             ]
         )
     ],
