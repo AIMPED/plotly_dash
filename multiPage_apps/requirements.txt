@@ -1,4 +1,0 @@
-dash
-dash-bootstrap-components
-pandas
-Flask-Caching
