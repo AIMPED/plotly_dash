@@ -1,3 +1,5 @@
+# this is an answer to a question on the plotly forums:
+# https://community.plotly.com/t/sub-indexing-pattern-matching-callbacks/80573
 import time
 import dash
 from dash import html, dcc, Input, Output, ALL, MATCH, ctx, State
