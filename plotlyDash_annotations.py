@@ -97,9 +97,7 @@ def get_click(graph_figure, clickData):
         new_shape = create_shape(x=x, y=y, size=5)
 
         # get existing shapes
-        shapes = graph_figure['layout'].get('shapes')
-        if not shapes:
-            shapes = []
+        shapes = graph_figure['layout'].get('shapes', [])
         shapes.extend(new_shape)
 
         # update figure layout
