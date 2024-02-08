@@ -1,7 +1,6 @@
 import json
 import dash
 from dash import html, dcc, Input, Output, State, clientside_callback
-import dash_bootstrap_components as dbc
 import plotly.graph_objects as go
 import pandas as pd
 
@@ -27,7 +26,9 @@ fig = go.Figure(
 
 app = dash.Dash(
     __name__,
-    external_stylesheets=[dbc.themes.BOOTSTRAP],
+    external_stylesheets=[
+        "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css",
+    ]
 )
 
 app.layout = html.Div(
@@ -36,7 +37,7 @@ app.layout = html.Div(
             html.Div(
                 [
                     dcc.Graph(id='graph', figure=fig),
-                    dbc.Button(id='iso', children='apply'),
+                    html.Button(id='iso', children='apply'),
                 ],
                 className='vstack'
             ),
